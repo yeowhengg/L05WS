@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
     TextView tvQ1;
     Button btnRevealQ1;
+    Button btnRevealQ2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         tvQ1 = findViewById(R.id.textViewQ1);
         btnRevealQ1 = findViewById(R.id.buttonRevealQ1);
+        btnRevealQ2 = findViewById(R.id.buttonRevealQ2);
 
         btnRevealQ1.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -29,5 +31,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        btnRevealQ2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(MainActivity.this, AnswerActivity2.class);
+                intent.putExtra("Answer", "Queue");
+                startActivity(intent);
+            }
+        });
+
     }
 }
