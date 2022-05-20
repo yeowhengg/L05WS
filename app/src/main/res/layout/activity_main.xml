@@ -16,6 +16,7 @@
         >
 
         <TextView
+            android:id="@+id/textViewQ1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/q1"
@@ -23,6 +24,7 @@
         </TextView>
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonRevealQ1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/reveal"
